@@ -1,0 +1,184 @@
+{
+"data": [
+  {
+      "id": "1000",
+      "productCode": "f230fh0g3",
+      "date": "2020-09-13",
+      "amount": 65,
+      "quantity": 1,
+      "customer": "David James",
+      "status": "PENDING",
+      "idProduct": "1000"
+  },
+  {
+      "id": "1001",
+      "productCode": "f230fh0g3",
+      "date": "2020-05-14",
+      "amount": 130,
+      "quantity": 2,
+      "customer": "Leon Rodrigues",
+      "status": "DELIVERED",
+      "idProduct": "1000"
+  },
+  {
+      "id": "1002",
+      "productCode": "f230fh0g3",
+      "date": "2019-01-04",
+      "amount": 65,
+      "quantity": 1,
+      "customer": "Juan Alejandro",
+      "status": "RETURNED",
+      "idProduct": "1000"
+  },
+  {
+      "id": "1003",
+      "productCode": "f230fh0g3",
+      "date": "2020-09-13",
+      "amount": 195,
+      "quantity": 3,
+      "customer": "Claire Morrow",
+      "status": "CANCELLED",
+      "idProduct": "1000"
+  },
+  {
+    "id": "2000",
+    "productCode": "nvklal433",
+    "date": "2020-05-14",
+    "amount": 72,
+    "quantity": 1,
+    "customer": "Maisha Jefferson",
+    "status": "DELIVERED",
+    "idProduct": "1002"
+  },
+  {
+    "id": "2001",
+    "productCode": "nvklal433",
+    "date": "2020-02-28",
+    "amount": 144,
+    "quantity": 2,
+    "customer": "Octavia Murillo",
+    "status": "PENDING",
+    "idProduct": "1002"
+  },
+  {
+    "id": "3000",
+    "productCode": "zz21cz3c1",
+    "date": "2020-07-05",
+    "amount": 79,
+    "quantity": 1,
+    "customer": "Stacey Leja",
+    "status": "DELIVERED",
+    "idProduct": "1003"
+  },
+  {
+    "id": "3001",
+    "productCode": "zz21cz3c1",
+    "date": "2020-02-06",
+    "amount": 79,
+    "quantity": 1,
+    "customer": "Ashley Wickens",
+    "status": "DELIVERED",
+    "idProduct": "1003"
+  },
+  {
+    "id": "5000",
+    "productCode": "h456wer53",
+    "date": "2020-09-05",
+    "amount": 60,
+    "quantity": 4,
+    "customer": "Mayumi Misaki",
+    "status": "PENDING",
+    "idProduct": "1005"
+  },
+  {
+    "id": "5001",
+    "productCode": "h456wer53",
+    "date": "2019-04-16",
+    "amount": 2,
+    "quantity": 30,
+    "customer": "Francesco Salvatore",
+    "status": "DELIVERED",
+    "idProduct": "1005"
+  },
+  {
+    "id": "6000",
+    "productCode": "av2231fwg",
+    "date": "2020-01-25",
+    "amount": 120,
+    "quantity": 1,
+    "customer": "Isabel Sinclair",
+    "status": "RETURNED",
+    "idProduct": "1006"
+  },
+  {
+    "id": "6001",
+    "productCode": "av2231fwg",
+    "date": "2019-03-12",
+    "amount": 240,
+    "quantity": 2,
+    "customer": "Lionel Clifford",
+    "status": "DELIVERED",
+    "idProduct": "1006"
+  },
+  {
+    "id": "6002",
+    "productCode": "av2231fwg",
+    "date": "2019-05-05",
+    "amount": 120,
+    "quantity": 1,
+    "customer": "Cody Chavez",
+    "status": "DELIVERED",
+    "idProduct": "1006"
+  },
+  {
+    "id": "7000",
+    "productCode": "bib36pfvm",
+    "date": "2020-02-24",
+    "amount": 32,
+    "quantity": 1,
+    "customer": "Arvin Darci",
+    "status": "DELIVERED",
+    "idProduct": "1007"
+  },
+  {
+    "id": "7001",
+    "productCode": "bib36pfvm",
+    "date": "2020-01-14",
+    "amount": 64,
+    "quantity": 2,
+    "customer": "Izzy Jones",
+    "status": "PENDING",
+    "idProduct": "1007"
+  },
+  {
+    "id": "8000",
+    "productCode": "mbvjkgip5",
+    "date": "2020-06-19",
+    "amount": 34,
+    "quantity": 1,
+    "customer": "Jennifer Smith",
+    "status": "DELIVERED",
+    "idProduct": "1008"
+  },
+  {
+    "id": "9000",
+    "productCode": "vbb124btr",
+    "date": "2020-01-05",
+    "amount": 99,
+    "quantity": 1,
+    "customer": "Jeanfrancois David",
+    "status": "DELIVERED",
+    "idProduct": "1009"
+  },
+  {
+    "id": "9001",
+    "productCode": "vbb124btr",
+    "date": "2020-01-19",
+    "amount": 198,
+    "quantity": 2,
+    "customer": "Ivar Greenwood",
+    "status": "RETURNED",
+    "idProduct": "1009"
+  }
+]
+}

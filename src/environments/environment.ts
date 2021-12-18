@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseApiKey: 'AIzaSyCkTWtmSg-kmrpTHWpr8W7iGk3ZdgQyICs',
+  apiUrl: 'https://www.primefaces.org/data/customers'
 };
 
 /*

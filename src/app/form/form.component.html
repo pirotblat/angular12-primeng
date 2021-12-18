@@ -1,0 +1,97 @@
+<div class="container">
+  <!-- <div class="row my-custom-row g-3 align-items-center"> -->
+  <div class="row p-2 bg-light">
+    <!-- <div class="col-auto">
+      <label for="inputTakziv" class="col-form-label">Password</label>
+    </div> -->
+    <!-- <div class="col-auto align-self-center"> -->
+    <div class="col-2">
+      <label for="inputTakziv" class="col-form-label">תכנון תקציב שנתי</label>
+      <!-- <button *ngIf="isEdit" type="button" class="btn-close p-2" aria-label="Close" (click)="onCancel()"></button> -->
+      <fa-icon
+        *ngIf="!isEdit"
+        (click)="onEdit()"
+        [icon]="faPencilAlt"
+        style="cursor: pointer; margin-right: 10px"
+      ></fa-icon>
+      <fa-icon
+        *ngIf="isEdit"
+        (click)="onCancel()"
+        [icon]="faTimes"
+        style="cursor: pointer; margin-right: 10px; color: red"
+      ></fa-icon>
+      <fa-icon
+        *ngIf="isEdit"
+        (click)="onOk()"
+        [icon]="faCheck"
+        style="cursor: pointer; margin-right: 10px"
+      ></fa-icon>
+      <!-- <svg *ngIf="!isEdit" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16"
+        style="cursor: pointer; margin-right: 10px;" (click)="onEdit()">
+        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+      </svg> -->
+      <input
+        *ngIf="isEdit"
+        [(ngModel)]="takzivTemp"
+        type="text"
+        id="inputTakziv"
+        class="form-control"
+      />
+      <label *ngIf="!isEdit" class="col-form-label p-2">{{
+        takziv | number
+      }}</label>
+    </div>
+    <div class="col-2">
+      <label for="dateEndTemp" class="col-form-label">תאריך סיום עדכון</label>
+      <fa-icon
+        *ngIf="!isEditD"
+        (click)="onEditD()"
+        [icon]="faPencilAlt"
+        style="cursor: pointer; margin-right: 10px"
+      ></fa-icon>
+      <fa-icon
+        *ngIf="isEditD"
+        (click)="onCancelD()"
+        [icon]="faTimes"
+        style="cursor: pointer; margin-right: 10px; color: red"
+      ></fa-icon>
+      <fa-icon
+        *ngIf="isEditD"
+        (click)="onOkD()"
+        [icon]="faCheck"
+        style="cursor: pointer; margin-right: 10px"
+      ></fa-icon>
+      <!-- <svg *ngIf="!isEdit" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16"
+        style="cursor: pointer; margin-right: 10px;" (click)="onEdit()">
+        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+      </svg> -->
+      <input
+        *ngIf="isEditD"
+        type="date"
+        id="dateEndTemp"
+        class="form-control"
+        [ngModel] ="dateEndTemp | date:'yyyy-MM-dd'" (ngModelChange)="dateEndTemp = $event"
+      />
+
+      <!-- <input [formControl]="dateStringControl" type="date" id="date-string" [(ngModel)]="dateEndTemp"/> -->
+
+      <!-- <label for="date-object">Date object value with directive help</label>
+      <input [formControl]="dateObjectControl" type="date" id="date-object" /> -->
+
+      <!-- <input
+        *ngIf="isEditD"
+        type="date"
+        class="form-control"
+        id="dateEndTemp"
+        name="dateEndTemp"
+        [ngModel]="dateEndTemp"
+        [value]="dateEndTemp"
+        #dateEndTemp="ngModel"
+      /> -->
+      <label *ngIf="!isEditD" class="col-form-label p-2">{{
+        dateEnd | date: "dd/MM/yyyy"
+      }}</label>
+    </div>
+  </div>
+</div>
+

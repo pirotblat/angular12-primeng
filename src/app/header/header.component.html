@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a routerLink="/" class="navbar-brand">Recipe Book</a>
+    </div>
+    <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" routerLink="/form">Form</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="!isAuthenticated"><a class="nav-link" routerLink="/auth">Authenticate</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" (click)="openPrimeNg()" style="cursor: pointer;" >Prime ng</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" (click)="openFlex()" style="cursor: pointer;" >Flex</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" (click)="openBootstrap()" style="cursor: pointer;" >Bootstrap</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" (click)="openTable()" style="cursor: pointer;" >Table</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" (click)="openTableEdit()" style="cursor: pointer;" >Table Edit</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" (click)="openTableFrozen()" style="cursor: pointer;" >Table Frozen</a></li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="isAuthenticated"><a class="nav-link" (click)="openCenes500()" style="cursor: pointer;" >Cenes500</a></li>
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item" *ngIf="isAuthenticated"><a class="nav-link" style="cursor: pointer;" (click)="onLogout()">Logout</a></li>
+        <li class="nav-item dropdown" *ngIf="isAuthenticated">
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Manage
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" style="cursor: pointer;">Saving Data</a>
+              <a class="dropdown-item" style="cursor: pointer;">Fach Data</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
